@@ -1,0 +1,14 @@
+[Dd]ebug/
+[Rr]elease/
+[Oo]bj/
+*.ncb
+*.suo
+*.sln.cache
+*.vssscc
+*.vspscc
+*.vskdb
+*.vsksln
+*.vsmdi
+*.user
+Visual Studio*/
+*.exe.stackdump
