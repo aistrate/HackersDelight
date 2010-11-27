@@ -1,0 +1,119 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<body>
+<p>Below is the C code for most of the programs that appear in HD, with test drivers.
+<p>To save this code on your machine using Netscape (4.77 - 7.0), click
+on a line below and then click File - Save As...  (or Save Page As ...).
+Then set the directory and file name and click Save.
+<br>Using IE (5.50), right-click a line below, click Save Target As ...,
+set directory and file name and set "Save as type:" to All Files, and
+then click Save.
+
+<p><a href="HDcode/snoob.c.txt">Fig. 2-1. Next higher number with same number of 1-bits.</a>
+<br><a href="HDcode/multover.c.txt">Fig. 2-2. Determination of overflow of unsigned multiplication.</a>
+<br><a href="HDcode/flp2.c.txt">Fig. 3-1. Greatest power of 2 less than or equal to <i><b>x</b></i>, branch free.</a>
+<br><a href="HDcode/clp2.c.txt">Fig. 3-3. Least power of 2 greater than or equal to <i><b>x</b></i>.</a>
+<br><a href="HDcode/boundsAddu.c.txt">Fig. 4-1. Propagating unsigned bounds through
+addition operations.</a>
+<br><a href="HDcode/boundsSubu.c.txt">Fig. 4-1. Propagating unsigned bounds
+through subtraction operations.</a>
+<br><a href="HDcode/boundsAdds.c.txt">Fig. 4-2. Propagating signed bounds through
+an addition operation.</a>
+<br><a href="HDcode/minOR.c.txt">Fig. 4-3. Minimum value of <i><b>x</b></i> | <i><b>y</b></i>
+with bounds on <i><b>x</b></i> and <i><b>y</b></i>.</a>
+<br><a href="HDcode/maxOR.c.txt">Fig. 4-4. Maximum value of <i><b>x</b></i> | <i><b>y</b></i>
+with bounds on <i><b>x</b></i> and <i><b>y</b></i>.</a>
+<br><a href="HDcode/minAND.c.txt">Fig. 4-5. Minimum value of <i><b>x</b></i> & <i><b>y</b></i>
+with bounds on <i><b>x</b></i> and <i><b>y</b></i>.</a>
+<br><a href="HDcode/maxAND.c.txt">Fig. 4-6. Maximum value of <i><b>x</b></i> & <i><b>y</b></i>
+with bounds on <i><b>x</b></i> and <i><b>y</b></i>.</a>
+<br><a href="HDcode/minXOR.c.txt">P. 62. Minimum value of <i><b>x</b></i> ^ <i><b>y</b></i>
+with bounds on <i><b>x</b></i> and <i><b>y</b></i>.</a>
+<br><a href="HDcode/maxXOR.c.txt">P. 62. Maximum value of <i><b>x</b></i> ^ <i><b>y</b></i>
+with bounds on <i><b>x</b></i> and <i><b>y</b></i>.</a>
+<br><a href="HDcode/minORs.c.txt">P. 62. Minimum value of <i><b>x</b></i> | <i><b>y</b></i>
+with bounds on <i><b>x</b></i> and <i><b>y</b></i> (signed).</a>
+<br><a href="HDcode/maxORs.c.txt">P. 62. Maximum value of <i><b>x</b></i> | <i><b>y</b></i>
+with bounds on <i><b>x</b></i> and <i><b>y</b></i> (signed).</a>
+<br><a href="HDcode/pop.c.txt">P. 66-72. Population count algorithms.</a>
+<br><a href="HDcode/pop_array.c.txt">Fig. 5-5. Counting 1-bits in an array.</a>
+Superior methods are given in the new code section below.
+<br><a href="HDcode/sparse.c.txt">P. 74. Indexing a moderately sparse array.</a>
+<br><a href="HDcode/parity.c.txt">P. 75-76. Various parity algorithms.</a>
+<br><a href="HDcode/nlz.c.txt">P. 77-82. Number of leading zeros algorithms.</a>
+<br><a href="HDcode/ntz.c.txt">P. 84-86. Number of trailing zeros algorithms.</a>
+<br><a href="HDcode/loopdet.c.txt">Fig. 5-17. Gosper's loop-detection algorithm.</a>
+<br><a href="HDcode/zbytel.c.txt">P. 92-96. Find first 0-byte or first value in a given range.</a>
+<br><a href="HDcode/zbyter.c.txt">---. Find rightmost 0-byte.</a>
+<br><a href="HDcode/ffstr1.c.txt">P. 97-98. Find first string of 1-bits of a given length.</a>
+<br><a href="HDcode/reverse.c.txt">P. 101-104. Reversing bits.</a> New code here.
+<br><a href="HDcode/increv.c.txt">P. 105-106. Incrementing a reversed integer.</a>
+<br><a href="HDcode/shuffle.c.txt">P. 107-108. Shuffling bits.</a>
+<br><a href="HDcode/transpose8.c.txt">P. 109-111. Transposing an 8x8 bit matrix (revised).</a>
+<br><a href="HDcode/transpose32.c.txt">P. 113-116. Transposing a 32x32 bit matrix.</a>
+<br><a href="HDcode/compress.c.txt">P. 117-119. Compress, or generalized extract.</a>
+<br><a href="HDcode/compress_left.c.txt">P. 122. Compress left.</a>
+<br><a href="HDcode/sagLE.c.txt">P. 124. Permuting by sheep and goats operation, little-endian.</a>
+<br><a href="HDcode/sagBE.c.txt">P. 124. Permuting by sheep and goats operation, big-endian.</a>
+<br><a href="HDcode/mulmns.c.txt">Fig. 8-1. Multiword integer multiplication, signed.</a>
+<br><a href="HDcode/mulmnu.c.txt">P. 129. Multiword integer multiplication, unsigned.</a>
+<br><a href="HDcode/mulhs.c.txt">Fig. 8-2. Multiply high signed.</a>
+<br><a href="HDcode/mulhu.c.txt">P. 132. Multiply high unsigned.</a>
+<br><a href="HDcode/muldws.c.txt">---. Multiply, 32x32 ==> 64, signed.</a>
+<br><a href="HDcode/muldwu.c.txt">---. Multiply, 32x32 ==> 64, unsigned.</a>
+<br><a href="HDcode/mulqdu.c.txt">---. Multiply, 64x64 ==> 128, unsigned.</a>
+<br><a href="HDcode/divmnu.c.txt">Fig. 9-1. Multiword integer division, unsigned.</a>
+<br><a href="HDcode/divluh.c.txt">Fig. 9-2. Divide long unsigned, shift-and-subtract algorithm.</a>
+<br><a href="HDcode/divlu.c.txt">Fig. 9-3. Divide long unsigned, using fullword division instruction.</a>
+<br><a href="HDcode/divls.c.txt">Fig. 9-4. Divide long signed, using divide long unsigned.</a>
+<br><a href="HDcode/magic.c.txt">Fig. 10-1. Computing the magic number for signed division.</a>
+<br><a href="HDcode/magicu.c.txt">Figs. 10-2 and 10-3. Computing the magic number for unsigned division.</a>
+<br><a href="HDcode/mulinv.c.txt">Figs. 10-4 and 10-5. Multiplicative inverse modulo 2<sup>32</sup>.</a>
+<br><a href="HDcode/isqrt.c.txt">Figs. 11-1 to 11-4. Integer square root.</a>
+<br><a href="HDcode/icbrt.c.txt">Fig. 11-5. Integer cube root, hardware algorithm.</a>
+<br><a href="HDcode/iexp.c.txt">Fig. 11-6. Computing <i>x<sup>n</sup></i> by binary decomposition of <i>n</i>.</a>
+<br><a href="HDcode/ilog.c.txt">Figs. 11-7 to 11-13. Integer log base 10.</a>
+<br><a href="HDcode/divbm2.c.txt">Fig. 12-1. Division in base &minus;2.</a>
+<br><a href="HDcode/hilbert/hilgen1.c.txt">Fig. 14-3. Hilbert curve generator.</a>
+<br><a href="HDcode/hilbert/hilgen2.c.txt">Fig. 14-4. Driver program for Hilbert curve generator.</a>
+<br><a href="HDcode/hilbert/hil_xy_from_s.c.txt">Fig. 14-5. Program for computing (<i>x</i>, <i>y</i>) from <i>s</i>.</a>
+<br><a href="HDcode/hilbert/lamxy.c.txt">Fig. 14-6. Lam and Shapiro method for computing (<i>x</i>, <i>y</i>) from <i>s</i>.</a>
+<br><a href="HDcode/hilbert/lamxy1.c.txt">P. 249. Variation of Fig. 14-6 that avoids a branch.</a>
+<br><a href="HDcode/hilbert/logicxy.c.txt">Fig. 14-7. Code to verify the logic circuit of Fig. 14-7.
+NB error in first and second printings: The title of this figure should be "Logic circuit for computing (<i>x</i>, <i>y</i>) from <i>s</i>."</a>
+<br><a href="HDcode/hilbert/glsxy.c.txt">Fig. 14-8. Parallel prefix method for computing (<i>x</i>, <i>y</i>) from <i>s</i>.</a>
+<br><a href="HDcode/hilbert/hil_s_from_xy.c.txt">Fig. 14-9. Program for computing <i>s</i> from (<i>x</i>, <i>y</i>).</a>
+<br><a href="HDcode/hilbert/lams.c.txt">Fig. 14-10. Lam and Shapiro method for computing <i>s</i> from (<i>x</i>, <i>y</i>).</a>
+<br><a href="HDcode/hilbert/lams1.c.txt">---. Variation of Fig. 14-10 that avoids a branch.</a>
+<br><a href="HDcode/hilbert/hil_inc_xy.c.txt">Fig. 14-11. Program for taking one step on the Hilbert curve.</a>
+<br><a href="HDcode/hilbert/logicinc.c.txt">Fig. 14-12. Code to verify the logic circuit of Fig. 14-12.</a>
+<br><a href="HDcode/hilbert/rtls.c.txt">---. Right-to-left algorithm for computing <i>s</i> from (<i>x</i>, <i>y</i>).</a>
+
+<p>Below is some new code, not in Hacker's Delight.
+
+<p> <a href="HDcode/newCode/basei.py">Convert base &minus;1 + <i>i</i> integer to <i>a + bi</i>, <i>a</i> and <i>b</i> in decimal (Python).</a>
+<br><a href="HDcode/newCode/crc.c.txt">Cyclic Redundancy Check (CRC-32).</a>
+<br><a href="HDcode/newCode/icbrt64.c.txt">Integer cube root of a 64-bit integer.</a>
+<br><a href="HDcode/newCode/expand.c.txt">Inverse of the compress (right) function.</a>
+<br><a href="HDcode/newCode/hamming.c.txt">SEC-DED Hamming code for 32 information bits.</a>
+<br><a href="HDcode/newCode/divDouble.c.txt">64/64 ==> 64 division, unsigned and signed.</a>
+<br><a href="HDcode/newCode/divOflo.c.txt">Test for overflow of signed "long division."</a>
+<br><a href="HDcode/newCode/divsc.c.txt">Signed division by constants.</a>
+<br><a href="HDcode/newCode/divuc.c.txt">Unsigned division by constants.</a>
+<br><a href="HDcode/newCode/divExact.c.txt">Exact division method of division by constants.</a>
+<br><a href="HDcode/newCode/fmaxstr1.c.txt">Find longest string of 1's in a word.</a>
+<br><a href="HDcode/newCode/fminstr1.c.txt">Find shortest string of 1's in a word (optionally, at least as long as a given integer <i>n</i>).</a>
+<br><a href="HDcode/newCode/remsc.c.txt">Signed remainder of division by constants.</a>
+<br><a href="HDcode/newCode/remuc.c.txt">Unsigned remainder of division by constants.</a>
+<br><a href="HDcode/newCode/popCmpr.c.txt">Determines which word has the larger population count.</a>
+<br><a href="HDcode/newCode/popDiff.c.txt">Computes pop(<i><b>x</b></i>) &minus; pop(<i><b>y</b></i>).</a>
+<br><a href="HDcode/newCode/pop_arrayHS.c.txt">Counting 1-bits in an array.</a>
+<br><a href="HDcode/newCode/boole.c.txt">Determines which of the 256 Boolean functions of three
+variables can be implemented with three binary Boolean instructions.</a>
+<br><a href="HDcode/newCode/rsqrt.c.txt">Reciprocal square root of an IEEE float.</a>
+<br><a href="HDcode/newCode/asqrt.c.txt">Approximate square root of an IEEE float.</a>
+<br><a href="HDcode/newCode/acbrt.c.txt">Approximate cube root of an IEEE float.</a>
+<br>
+<p><center><a href="index.htm"><i>Home</i></a></center>
+</body>
+</html>
