@@ -1,9 +1,10 @@
-.DS_Store
-*~
-*#
 *
 !*.*
 !*/
+
+.DS_Store
+*~
+*#
 [Dd]ebug/
 [Rr]elease/
 [Oo]bj/
